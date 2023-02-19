@@ -5,3 +5,51 @@
     box-sizing: border-box;
   }
   
+  @property --p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  }
+ 
+  .progress-skill {
+    --p:20;
+    --b:22px;
+    --c:darkred;
+    --w:150px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:5px;
+    place-content:center;
+    font-size:25px;
+    font-weight:bold;
+    font-family:sans-serif;
+  }
+  .progress-skill:before,
+  .progress-skill:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  .progress-skill:before {
+    inset:0;
+    background:
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000001a 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+
+  .animate {
+    animation:p 1s .5s both;
+  }
+  .no-round:before {
+    background-size:0 0,auto;
+  }
+  .no-round:after {
+    content:none;
+  }
+  @keyframes p {
+    from{--p:0}
+  }
