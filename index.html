@@ -19,7 +19,7 @@
 <!-- CUERPO DEL SITIO-->
   <body class="container-fluid p-0 bg-light">
     <!--CABECERA DEL SITIO -->
-    <header>
+    <header style="margin-bottom:1rem">
       <!--BARRA DE NAVEGACIÓN-->
       <nav class="navbar sticky-top bg-primary">
         <div class="container-fluid">
@@ -34,7 +34,7 @@
           <i class="fa-brands fa-linkedin fa-xl" href="#"></i>
           <i class="fa-brands fa-slack fa-xl" href="#"></i>
           <i class="fa-brands fa-discord fa-xl" href="#"></i>
-    <!--BOTON LOGIN-->
+          <!--BOTON LOGIN-->
           <button type="button" class="btn btn-primary fs-0.9"><i class="fa-solid fa-user"></i>      Login</i></button> 
         </div>
       </nav>
@@ -43,19 +43,18 @@
     </header>
    <!--CUERPO DEL SITIO-->
     <main class="container-fluid">
-
     <!--ACERCA DE MÍ-->  
-      <section class="col container-fluid" id="about">
-        <h2>Acerca de..</h2>
-       <ul class="row align-items-center">
+      <section class="container-fluid" id="about">
+       <ul class="row align-items-center p-0">
     <!--FOTO PERFIL-->
-        <div class="col-2">
+        <div class="col-3 text-center">
           <img src="../PortfolioFrontend/Imagenes/user.png" alt="Foto Perfil" class="img-fluid">
+          <h3>Ana</h3>
           <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Smashicons - Flaticon</a>
         </div>
-    <!--NOMBRE, TÍTULO, INFORMACIÓN PROFESIONAL RESUMIDA-->
-        <div class="col-10">
-          <h3>Ana</h3>
+    <!--NOMBRE, TÍTULO, INFORMACIÓN PROFESIONAL RESUMIDA-->   
+    <div class="col-9">
+          <h2>Acerca de..</h2>
           <h5>Desarrolladora Web Full Stack</h5>
            <p>Información profesional: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
         </div>
@@ -67,7 +66,7 @@
         <h2>Experiencia</h2>
         <!--EXPERIENCIA 1-->    
           <div class="row align-items-center">
-              <div class="col-2 text-center">
+              <div class="col-3 text-center">
           <!--LOGO Y NOMBRE EMPRESA-->      
                 <a href=""><i class="fa-solid fa-user"></i></a>
                 <a href=""><p>Nombre Empresa</p></a>
@@ -78,14 +77,10 @@
                 <h6>Período</h6>
                 <p >Descripción de las actividades realizadas en el puesto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
-          <!--BOTON DE EDICIÓN-->
-               <div class="col-1 text-center" >
-                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
-               </div>
             </div>
         <!--EXPERIENCIA 2--> 
         <div class="row align-items-center">
-          <div class="col-2 text-center">
+          <div class="col-3 text-center">
       <!--LOGO Y NOMBRE EMPRESA-->      
             <a href=""><i class="fa-solid fa-user"></i></a>
             <a href=""><p>Nombre Empresa</p></a>
@@ -96,10 +91,6 @@
             <h6>Período</h6>
             <p >Descripción de las actividades realizadas en el puesto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
           </div>
-        <!--BOTÓN DE EDICIÓN-->
-           <div class="col-1 text-center" >
-            <a href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
-           </div>
         </div>
       </section>
     <!--EDUCACIÓN-->
@@ -112,15 +103,11 @@
                 <a href=""><p>Nombre del Instituto</p></a>
               </div>
               <!--TÍTULO, PERÍODO, DESCRIPCIÓN-->
-              <div class="col-8">
+              <div class="col-9">
                 <h4 >Título</h4>
                 <h6>Período</h6>
                 <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
-              <!--BOTÓN EDICIÓN-->
-               <div class="col-1 text-center" >
-                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
-               </div>
             </div>
             <div class="row align-items-center">
               <!--LOGO Y NOMBRE DE INSTITUCIÓN-->
@@ -129,15 +116,11 @@
                 <a href=""><p>Nombre del Instituto</p></a>
               </div>
               <!--CURSO, PERÍODO, DESCRIPCIÓN-->
-              <div class="col-8">
+              <div class="col-9">
                 <h4 >Curso</h4>
                 <h6>Período</h6>
                 <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
-               <!--BOTÓN EDICIÓN-->
-               <div class="col-1 text-center" >
-                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
-               </div>
             </div>
             <div class="row align-items-center">
               <!--LOGO Y NOMBRE DE INSTITUCIÓN-->
@@ -146,35 +129,67 @@
                 <a href=""><p>Nombre del Instituto</p></a>
               </div>
               <!--CERTIFICACIÓN, PERÍODO, DESCRIPCIÓN-->
-              <div class="col-8">
+              <div class="col-9">
                 <h4 >Certificación</h4>
                 <h6>Período</h6>
                 <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
-              <!--BOTÓN EDICIÓN-->
-               <div class="col-1 text-center" >
-                <a href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
-               </div>
             </div>
       </section>
 
     <!--HARD & SOFT SKILLS-->
       <section class="container-fluid" id="skills">
         <h2>Hard & Soft Skills</h2>
+      <!--GRÁFICOS PORCENTAJE DE SKILLS-->  
        <div class="container-fluid text-center">
-         <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 1</div>
-         <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 2</div>
-         <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 3</div>
-        <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 4</div>
-        <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 5</div>
-        <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 6</div>
+        <div>
+          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 1</div>
+          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 2</div>
+          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 3</div>
+        </div>
+        <div>
+          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 4</div>
+          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 5</div>
+          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 6</div>
+        </div>
       </div>
+      <!--SECCIÓN IDIOMAS-->
       <div>
         <h2>Idiomas</h2>
+        <h6>Idioma</h6>
+        <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
       </div>
-        
       </section>
-   
+
+   <!--SECCION PROYECTOS-->
+   <section class="container-fluid" id="projects">
+    <h2>Proyectos</h2>
+    <!--PROYECTO 1-->
+        <div class="row align-items-center p-2">
+          <div>
+          <!--NOMBRE, PERÍODO, DESCRIPCIÓN-->
+            <h4 >Nombre del Proyecto 1</h4>
+            <h6>Fecha de realización</h6>
+            <p >Descripción de proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
+            <a href="" alt="Enlace Proyecto">Link a su evidencia/Imágenes</a>
+          </div>
+        </div>
+    <!--PROYECTO 2-->
+        <div class="row align-items-center p-2">
+          <div>
+          <!--NOMBRE, PERÍODO, DESCRIPCIÓN-->
+            <h4 >Nombre del Proyecto 2</h4>
+            <h6>Fecha de realización</h6>
+            <p >Descripción de proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
+            <a href="" alt="Enlace Proyecto">Link a su evidencia/Imágenes</a>
+          </div>
+          <!--BOTÓN EDICIÓN-->
+           <div class="col-1 text-center visually-hidden" >
+            <a href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></a>
+           </div>
+        </div>
+    </section>
+
     </main>
     <footer class="container-fluid">
       <p>&copy; 2023 Portfolio Web Full Stack</p>

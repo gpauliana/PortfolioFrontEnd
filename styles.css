@@ -4,14 +4,15 @@
     padding: 0;
     box-sizing: border-box;
   }
+
   
   @property --p{
     syntax: '<number>';
     inherits: true;
     initial-value: 0;
   }
- 
-  .progress-skill {
+
+   .progress-skill {
     --p:20;
     --b:22px;
     --c:darkred;
@@ -53,3 +54,28 @@
   @keyframes p {
     from{--p:0}
   }
+
+ .container {
+  position: relative;
+} 
+
+.container .btn {
+  position: absolute;
+  top: .5rem;
+  right: 1rem;
+}
+
+.button-container {
+  position: relative;
+}
+.button-container .btn {
+  position: absolute;
+  top: 0.3rem;
+  right: 1rem;
+}
+
+.button-container .btn-group {
+  position: absolute;
+  top: 0rem;
+  right: 0rem;
+}
