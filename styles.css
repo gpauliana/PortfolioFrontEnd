@@ -3,9 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-size:0.9rem;
   }
 
-  
+
+   
+
   @property --p{
     syntax: '<number>';
     inherits: true;
@@ -59,7 +62,7 @@
   position: relative;
 } 
 
-.container .btn {
+.container button {
   position: absolute;
   top: .5rem;
   right: 1rem;
@@ -68,10 +71,10 @@
 .button-container {
   position: relative;
 }
-.button-container .btn {
+.button-container button {
   position: absolute;
-  top: 0.3rem;
-  right: 1rem;
+  top: 0.5rem;
+  right: 0.5rem;
 }
 
 .button-container .btn-group {
@@ -79,3 +82,24 @@
   top: 0rem;
   right: 0rem;
 }
+
+.perfil {
+   position: relative;
+   border-radius: 50%;
+   translate: 1% -50%;
+}
+
+#banner {
+  margin-bottom: -10%;
+}
+
+.sticky-top .navbar{
+  min-height: 70px;
+}
+
+section div {
+  margin-bottom: 1%;
+}
+
+
+

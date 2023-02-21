@@ -19,47 +19,48 @@
 <!-- CUERPO DEL SITIO-->
   <body class="container-fluid p-0 bg-light">
      <!--CABECERA DEL SITIO -->
-     <header >
-      <!--BARRA DE NAVEGACIÓN-->
-      <nav class="navbar bg-primary">
+     <header class="sticky-top">
+      <nav class="navbar bg-primary ps-2 pe-1">
+        <div class="container-fluid ">
+        <!--LOGO Y ENLACE-->    
+         <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
+           <img src="/Imagenes/LogoAP1.png" alt="APLogo" width="100" class="d-inline-block align-text-top"></a> 
+         <div> 
          <div class="container-fluid">
-         <!--LOGO Y ENLACE-->    
-          <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa">
-            <img src="/Imagenes/LogoAP1.png" alt="APLogo" width="100" class="d-inline-block align-text-top"></a> 
-          <div> 
-          <div class="container-fluid">
-         <!--SOCIAL FALTAN ENLACES-->    
-             <i class="fa-brands fa-github fa-xl" href="#"></i>
-             <i class="fa-brands fa-linkedin fa-xl" href="#"></i>
-              <i class="fa-brands fa-slack fa-xl" href="#"></i>
-             <i class="fa-brands fa-discord fa-xl" href="#"></i>
-         <!--BOTON LOGOUT-->
-             <button type="button" class="btn btn-sm btn-primary fs-0.9"><i class="fa-solid fa-user"></i>      Logout</i></button> 
-            </div>
-     </nav>
-     <!--BANNER Y EDICIÓN BANNER-->
-        <div class="button-container container-fluid">
-            <img src="/Imagenes/raphael-schaller-GkinCd2enIY-unsplash.jpg" alt="banner" class="img-fluid">
-            <button href="#" class="btn btn-sm btn-secondary"><i class="fa-solid fa-pen"></i></button>
-        </div>
+        <!--SOCIAL FALTAN ENLACES-->    
+            <i class="fa-brands fa-github fa-xl" href="#"></i>
+            <i class="fa-brands fa-linkedin fa-xl" href="#"></i>
+             <i class="fa-brands fa-slack fa-xl" href="#"></i>
+            <i class="fa-brands fa-discord fa-xl" href="#"></i>
+        <!--BOTON LOGOUT-->
+            <button type="button" class="btn btn-sm btn-primary fs-0.9"><i class="fa-solid fa-user"></i>      Logout</i></button> 
+           </div>
+    </nav>
     </header>
-
  
    <!--CUERPO DEL SITIO-->
     <main class="container-fluid">
-
-    <!--ACERCA DE MÍ-->  
-      <section class="container-fluid" id="about">
-       <ul class="row p-0">
-    <!--FOTO PERFIL-->
+        <!--BANNER Y EDICIÓN BANNER-->
+        <div class="button-container container-fluid p-0" id="banner">
+            <img src="/Imagenes/raphael-schaller-GkinCd2enIY-unsplash.jpg" alt="banner" class="img-fluid">
+            <button href="#" class="btn btn-sm btn-secondary"><i class="fa-solid fa-pen"></i></button>
+                <!--BOTÓN DE EDICIÓN FOTO PERFIL-->
+               <div class="button-container perfil row align-items-center ps-0">
+                <div class="col-3">
+                    <img src="/Imagenes/user.png" alt="Foto Perfil" class="img-fluid" width="auto">
+                </div>
+                 <div class="col-9">
+                    <a href="#" type="button" class="btn btn-sm btn-secondary"><i class="fa-solid fa-pen"></i></a>
+                 </div>
+               </div>
+            </div>
+        </div>
+    <!--ACERCA DE-->  
+      <section class="container-fluid " id="about">
+       <ul class="row align-items-start ps-0">
+ 
     <div class="col-3 text-center">
-        <!--BOTÓN DE EDICIÓN FOTO PERFIL-->
-       <div class="button-container">
-         <img src="/Imagenes/user.png" alt="Foto Perfil" class="img-fluid">
-         <button href="#" class="btn btn-sm btn-secondary"><i class="fa-solid fa-pen"></i></button>
-       </div>
-        <h3>Ana</h3>
-        <a href="https://www.flaticon.com/free-icons/user" title="user icons">User icons created by Smashicons - Flaticon</a>
+        <h4>Ana García</h4>
     </div>
         <!--NOMBRE, TÍTULO, INFORMACIÓN PROFESIONAL RESUMIDA-->
         <div class="col-9 button-container">
@@ -67,8 +68,8 @@
                 <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
                 <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
               </div>
-          <h2>Acerca de..</h2>
-          <h5>Desarrolladora Web Full Stack</h5>
+          <h4>Acerca de..</h4>
+          <h6>Desarrolladora Web Full Stack</h6>
           <p>Información profesional: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
         </div>
        </ul>
@@ -76,7 +77,7 @@
 
       <!--EXPERIENCIA-->
       <section class="container-fluid" id="work">
-        <h2>Experiencia</h2>
+        <h3>Experiencia</h3>
         <!--EXPERIENCIA 1-->    
           <div class="row align-items-center">
               <div class="col-3 text-center">
@@ -91,7 +92,7 @@
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
                   </div>
-                <h4 >Título del puesto</h4>
+                <h5>Título del puesto</h5>
                 <h6>Período</h6>
                 <p >Descripción de las actividades realizadas en el puesto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
@@ -110,7 +111,7 @@
             <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
             <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
           </div>
-            <h4 >Título del puesto</h4>
+            <h5>Título del puesto</h5>
             <h6>Período</h6>
             <p >Descripción de las actividades realizadas en el puesto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
           </div>
@@ -118,7 +119,7 @@
       </section>
     <!--EDUCACIÓN-->
       <section class="container-fluid" id="educacion">
-        <h2>Educación</h2>
+        <h3>Educación</h3>
             <div class="row align-items-center">
               <!--LOGO Y NOMBRE DE INSTITUCIÓN-->
               <div class="col-3 text-center">
@@ -132,7 +133,7 @@
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
                   </div>
-                <h4 >Título</h4>
+                <h5>Título</h5>
                 <h6>Período</h6>
                 <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
@@ -150,7 +151,7 @@
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
                   </div>
-                <h4 >Curso</h4>
+                <h5>Curso</h5>
                 <h6>Período</h6>
                 <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
@@ -168,7 +169,7 @@
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
                     <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
                   </div>
-                <h4 >Certificación</h4>
+                <h5>Certificación</h5>
                 <h6>Período</h6>
                 <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
               </div>
@@ -182,27 +183,24 @@
             <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
             <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
           </div>
-        <h2>Hard & Soft Skills</h2>
+        <h3>Hard & Soft Skills</h3>
       <!--GRÁFICOS PORCENTAJE DE SKILLS-->  
        <div class="container-fluid text-center">
-        <div>
-             <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 1</div>
-             <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 2</div>
-             <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 3</div>
-        </div>
-       <div>
+         <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 1</div>
+         <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 2</div>
+         <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 3</div>
          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 4</div>
          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 5</div>
          <div class="progress-skill animate .no-round" style="--p:80;--b:15px;--c:orange;">Skill 6</div>
        </div>
-      </div>
+      
       <!--SECCIÓN IDIOMAS-->
       <div class="button-container">
         <div class="btn-group btn-group-sm" role="group" aria-label="Basic example">
             <button href="#" class="btn btn-secondary"><i class="fa-solid fa-pen"></i></button>
             <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
           </div>
-        <h2>Idiomas</h2>
+        <h3>Idiomas</h3>
         <h6>Idioma</h6>
         <p >Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
       </div>
@@ -210,7 +208,7 @@
 
    <!--SECCION PROYECTOS-->
    <section class="container-fluid" id="projects">
-    <h2>Proyectos</h2>
+    <h3>Proyectos</h3>
     <!--PROYECTO 1-->
         <div class="row align-items-center p-2">
           <div class="col-12 button-container">
@@ -219,9 +217,9 @@
                 <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
               </div>
           <!--NOMBRE, PERÍODO, DESCRIPCIÓN-->
-            <h4 >Nombre del Proyecto 1</h4>
+            <h5>Nombre del Proyecto 1</h5>
             <h6>Fecha de realización</h6>
-            <p >Descripción de proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
+            <p>Descripción de proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
             <a href="" alt="Enlace Proyecto">Link a su evidencia/Imágenes</a>
           </div>
         </div>
@@ -233,9 +231,9 @@
                 <button href="#" class="btn btn-secondary"><i class="fa-solid fa-xmark"></i></button>
               </div>
           <!--NOMBRE, PERÍODO, DESCRIPCIÓN-->
-            <h4 >Nombre del Proyecto 2</h4>
+            <h5>Nombre del Proyecto 2</h5>
             <h6>Fecha de realización</h6>
-            <p >Descripción de proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
+            <p>Descripción de proyecto: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis sapien velit. Nullam quis leo lacinia, maximus eros nec, consequat lorem.</p>
             <a href="" alt="Enlace Proyecto">Link a su evidencia/Imágenes</a>
           </div>
         </div>
